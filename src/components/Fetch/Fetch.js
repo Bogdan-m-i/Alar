@@ -1,12 +1,16 @@
+import contacts from '@/assets/json/contacts.json';
+
 export default class Fetch {
   static async getData(url) {
-    const res = await fetch(url, {
-      method: 'GET',
-    });
-
-    const json = res.json();
-
-    return json;
+    // const res = await fetch(url, {
+    //   method: 'GET',
+    // });
+    //
+    // const json = res.json();
+    //
+    // return json;
+    console.log('GET', url);
+    return contacts;
   }
 
   static async postData(url, data) {
