@@ -7,4 +7,4 @@
 - npm run lint:fix - fix .js files
 
 ###
-demo: https://bogdan-m-i.github.io/Alar
+demo on firebase hosting: https://alar-f2449.web.app/
