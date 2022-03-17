@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <link type="image/x-icon" rel="shortcut icon" href="assets/img/favicon.ico">
+    <title>Главная</title>
+    <meta name="description" content="Описание главной страницы">
+  <script defer="defer" src="202.5d5724299db75f869550.js"></script><script defer="defer" src="index.7715f45379738192b765.js"></script><link href="./css/index.6cd0681889734c88c1ee.css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <div class="tabs__title">
+          <h1>Тестовое задание для позиции Front-end Developer</h1>
+        </div>
+        <div class="tabs__control">
+          <button class="btn" data-target="tab1">Canvas</button>
+          <button class="btn" data-target="tab2">SPA</button>
+        </div>
+        <div class="tabs__content">
+          <div class="tabs__tab" id="tab1">
+            <div class="canvas-wrap">
+              <canvas id="stars" width="600" height="600"></canvas>
+              <canvas id="result" width="600" height="50"></canvas>
+            </div>
+          </div>
+          <div class="tabs__tab" id="tab2">
+            <div class="info" style="max-width: 800px; margin: 0 auto 10px; font-size: .8rem">*При добавлении, удалении, редактировании записей<br>в консоль выводятся сообщения формата [method url data]</div>
+            <div class="table">
+              <div class="table__header">
+                <div class="table__row">
+                  <div class="table__col">Name</div>
+                  <div class="table__col">Phone</div>
+                  <div class="table__col">Actions</div>
+                </div>
+              </div>
+              <div class="table__body"></div>
+              <div class="table__footer">
+                <form class="table__row" id="new-contact">
+                  <div class="table__col">
+                    <div class="input">
+                      <input name="name" required="">
+                      <div class="input__error"></div>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="input">
+                      <input name="phone" pattern="^[+]{0,1}[0-9\-]+$" minlength="6" maxlength="16" required="">
+                      <div class="input__error"></div>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <button class="table__row-btn btn btn_success" data-role="save" type="submit">
+                      <svg class="svg-icon icon-add">
+                        <use xlink:href="/assets/img/icons/sprite.svg#add"></use>
+                      </svg>
+                    </button>
+                    <button class="table__row-btn btn btn_danger" type="reset">
+                      <svg class="svg-icon icon-reset">
+                        <use xlink:href="/assets/img/icons/sprite.svg#reset"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

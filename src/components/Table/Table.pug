@@ -1,0 +1,33 @@
+.info(style="max-width: 800px; margin: 0 auto 10px; font-size: .8rem")
+    | *При добавлении, удалении, редактировании записей
+    br
+    | в консоль выводятся сообщения формата [method url data]
+
+.table
+    .table__header
+        .table__row
+            .table__col Name
+            .table__col Phone
+            .table__col Actions
+    .table__body
+    .table__footer
+        form#new-contact.table__row
+            .table__col
+                .input
+                    input(name="name" required)
+                    .input__error
+            .table__col
+                .input
+                    input(
+                        name="phone"
+                        pattern="^[+]{0,1}[0-9\\-]+$"
+                        minlength=6
+                        maxlength=16
+                        required
+                    )
+                    .input__error
+            .table__col
+                button(data-role="save" type="submit").table__row-btn.btn.btn_success
+                    +icon('add')
+                button(type="reset").table__row-btn.btn.btn_danger
+                    +icon('reset')
